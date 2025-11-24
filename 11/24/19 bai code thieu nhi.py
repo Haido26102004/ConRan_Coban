@@ -1,7 +1,7 @@
 tong = 0
 while True:
     try:
-        n = int(input("Nhap N: "))
+        n = int(input("Nhap N "))
         if(n>0):
             break
     except ValueError:
@@ -35,6 +35,7 @@ for i in range (1,n+1):
     if(i%5==0):
         continue
     print(i,end =" ")
+# ===================Cau 8 =======================
 min =  1000
 max = -1000
 i = 1
@@ -50,3 +51,11 @@ while(i<= n):
         print ("Loi kieu du lieu")
 print(f"So nho nhat la {min}")
 print (f"So lon nhat {max}")
+# =================== cau 9 ===============
+n = int(input("So n "))
+y = n
+dem = 0
+while y >0:
+    dem += 1
+    y //=10
+print(f"So {n} co {dem} chu so")
