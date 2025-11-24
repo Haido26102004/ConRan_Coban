@@ -35,8 +35,18 @@ for i in range (1,n+1):
     if(i%5==0):
         continue
     print(i,end =" ")
-print("\n======Cau7======")
-for i in range (1,n+1):
-    if(i < n):    
-        tong += i
-print(f"tong cua cac so le {n} la : {tong}")
+min =  1000
+max = -1000
+i = 1
+while(i<= n):
+    try:
+        x = int(input(f"nhap so thu {i} "))
+        i += 1
+        if x <min:
+            min = x
+        if x > max:
+            max = x
+    except ValueError:
+        print ("Loi kieu du lieu")
+print(f"So nho nhat la {min}")
+print (f"So lon nhat {max}")
