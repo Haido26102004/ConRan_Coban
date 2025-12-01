@@ -7,4 +7,5 @@ while True:
             break
     except ValueError:
         print("Loi nhap sai kieu du lieu")
-print(f"UCBC cua {a} va {b} la {func.ucbc(a,b)}")
+print(f"UCLN cua {a} va {b} la {func.ucln(a,b)}")
+print(f"BCNN cua {a} va {b} la {func.bcnn(a,b)}")

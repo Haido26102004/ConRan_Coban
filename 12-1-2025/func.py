@@ -4,7 +4,7 @@ def hcn(cd,cr):
     CV = cd*cr
     return S,CV
 
-def ucbc (a,b):
+def ucln (a,b):
     if b == 0:
         return a
     while b!= 0:
@@ -12,3 +12,5 @@ def ucbc (a,b):
         b =a%b
         a = temp
     return a
+def bcnn(a, b):
+    return (a * b)//ucln(a, b)
