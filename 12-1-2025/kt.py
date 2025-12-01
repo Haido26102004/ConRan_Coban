@@ -1,8 +1,9 @@
 import func
-try:
-    cd = int(input("chieu dai la :"))
-    cr = int(input("chieu rong la :"))
-except ValueError:print("Loi nhap sai kieu du lieu")
-else:
-    tuple = func.hcn(cd,cr)
-    print (f"Dien tich hinh chu nhat la {tuple[0]} va Chu vi hinh chu nhat la {tuple[1]}")
+while True:
+    try:
+        a = int(input("a la :"))
+        b = int(input("b la :"))
+    except ValueError:
+        print("Loi nhap sai kieu du lieu")
+    else:
+        print(f"UCBC cua {a} va {b} la {func.ucbc(a,b)}")
